@@ -1,0 +1,236 @@
+body {
+    /* 清除邊界（上右下左）=> 順時鐘方向 */
+    margin: 0;
+    font-family: Arial;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.text {
+    /* 輔助框線 */
+    /* 線條粗細 線條樣式 線條色彩 */
+    /* border: 1px solid red; */
+    width: 1200px;
+    /* auto: 置中，減去現有物件尺寸/2 */
+    margin-left: auto;
+    margin-right: auto;
+    /* flex: 由堆疊排列改為水平排列 */
+    display: flex;
+    /* padding-top/bottom 上/下增加間隔 */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* space-between: 左右切齊邊界，其餘均分；space-around: 左右留白，其餘均分 */
+    justify-content: space-between;
+}
+
+.textbox {
+    /* border: 1px solid green; */
+    width: 360px;
+    /* background-color: #99e; */
+    /* text-align: center中 left左 right右 justify左右對齊 */
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h2 {
+    color: #be1515;
+    font-size: 32px;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.slogan {
+    background-color: #be1515;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.slogan h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.recommend h2 {
+    font-size: 40px;
+    color: #20a53d;
+    text-align: center;
+}
+
+.classcontent {
+    /* border: 10px solid #be1515; */
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.classbox {
+    width: 320px;
+    box-shadow: 0 0 10px #0000004b;
+    /* 框線內側增加留白區 */
+    padding: 20px;
+}
+
+.classbox img {
+    width: 100%;
+}
+
+.classbox h3 {
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.classbox .p-blue {
+    color: rgb(5, 116, 206);
+}
+
+.classbox p {
+    color: #505050;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.classbox p s {
+    font-size: 20px;
+}
+
+.classbox p span {
+    font-size: 24px;
+    color: #be1515;
+    font-weight: bold;
+}
+
+/* 處理按鈕位置 */
+.classbox .p-center {
+    text-align: center;
+}
+
+.classbox .pay a {
+    background-color: #be1515;
+    color: #fff;
+    text-decoration: none;
+    /* 因超連結預設為行內元素:本身沒有寬高，所以將超連結改成區塊元素 */
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* 四邊圓角 */
+    border-radius: 5px;
+}
+
+.classbox .pay a:hover {
+    background-color: #660d0d;
+}
+
+/* 按鈕區塊調整 */
+.classbox .btn{
+    width: 100%;
+    padding: auto;    
+    text-align: center;
+}
+
+/* 按鈕格式調整 */
+.classbox .btn button {
+    background-color: #be1515;
+    color: #fff;
+    /* button預設就有border外框 要取消需下none */
+    border: none;    
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    
+}
+
+/* 碰到按鈕時 */
+.classbox .btn button:hover {
+    /* 變成手掌形狀 */
+    cursor: pointer;
+    /* 改為深紅色 */
+    background-color: #660d0d;
+}
+
+.footer {
+    background-color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 響應式小尺寸變化 */
+@media(max-width:650px) {
+    #wrap {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    .text {
+        /* border: 2px solid red; */
+        display: block;
+        width: 100%;
+    }
+
+    .textbox {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .classcontent {
+        display: block;
+        width: 100%;
+    }
+
+    .classbox {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* 響應式中尺寸變化 */
+@media (min-width: 651px) and (max-width:1119px) {
+    #wrap {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    .text {
+        /* border: 2px solid red; */
+        width: 90%;
+    }
+
+    .textbox {
+        margin: auto;
+        margin: 1%;
+    }
+
+    .classcontent {
+        width: 90%;
+    }
+
+    .classbox {
+        margin: auto;
+        margin: 1%;
+    }
+
+}

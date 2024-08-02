@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <!-- 燈箱效果外掛程式lightbox2 -->
+    <link href="./lightbox2/css/lightbox.css" rel="stylesheet" />
+    <!-- 自己的CSS，要放最後，避免被覆蓋 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 在外層包一個wrap -->
+    <div id="wrap">
+        <!-- 建立Banner區塊 -->
+        <!-- class 類別名稱 -->
+        <div class="banner">
+            <!-- 建立圖片img -->
+            <!-- src="圖片來源" title="圖片說明" -->
+            <!-- alt="替代文字"=>圖片找不到時出現 -->
+            <img src="./image/banner.jpg" alt="banner圖" title="課程banner">
+        </div>
+        <!-- 文字區 -->
+        <div class="text">
+            <!-- 標題區一 -->
+            <div class="textbox">
+                <!-- 標題 -->
+                <h2>標題一</h2>
+                <!-- 內容 -->
+                <p>若立體出現了，我們就不得不考慮它出現了的事實。問題的關鍵究竟為何？面對如此難題，我們必須設想周全。深入探討立體，是釐清一切的關鍵。</p>
+            </div>
+            <div class="textbox">
+                <h2>標題二</h2>
+                <p>俗話說的好，掌握思考過程，也就掌握了遊戲。遊戲對我來說，已經成為了我生活的一部分。當前最急迫的事，想必就是釐清疑惑了。</p>
+            </div>
+            <div class="textbox">
+                <h2>標題三</h2>
+                <p>由於，看看別人，再想想自己，會發現問題的核心其實就在你身旁。網頁設計，到底應該如何實現。面對如此難題，我們必須設想周全。</p>
+            </div>
+        </div>
+        <div class="slogan">
+            <h2>讓學習成為一種習慣</h2>
+        </div>
+        <div class="recommend">
+            <h2>推薦課程</h2>
+        </div>
+        <div class="classcontent">
+            <div class="classbox">
+                <a href="./image/unity.jpg" data-lightbox="image1" data-title="">
+                    <img src="./image/unity.jpg" alt="Unity">
+                </a>
+                <h3>Unity 5</h3>
+                <p class="p-blue"> 若立體出現了，我們就不得不考慮它出現了的事實。問題的關鍵究竟為何？面對如此難題，我們必須設想周全。深入探討立體，是釐清一切的關鍵。</p>
+                <p>講師:XXX</p>
+                <P>影音課程時數:4小時</P>
+                <p class="p-center">
+                    <s>原價:NT$1600</s>
+                    <span>NT$1200</span>
+                </p>
+                <div class="pay">
+                    <!-- 超連結要設定寬高要刪除<button> 留下超連結後 再加上display:block-->
+                    <a href="#">付款上課去</a>
+                </div>
+                <!--如果按鈕width不是100% 要置中 則使用Button製作會比較方便，如下-->
+                <!-- <div class="btn">
+                    <button>
+                        付款上課去
+                    </button>
+                </div> -->
+            </div>
+            <div class="classbox">
+                <a href="./image/gamesalad.jpg" data-lightbox="image2" data-title="">
+                    <img src="./image/gamesalad.jpg" alt="gamesalad">
+                </a>
+                <h3>GameSalad 2D遊戲製作</h3>
+                <p class="p-blue">俗話說的好，掌握思考過程，也就掌握了遊戲。遊戲對我來說，已經成為了我生活的一部分。當前最急迫的事，想必就是釐清疑惑了。</p>
+                <p>講師:XXX</p>
+                <P>影音課程時數:8小時</P>
+                <p class="p-center">
+                    <s>原價:NT$3200</s>
+                    <span>NT$1600</span>
+                </p>
+                <div class="pay">
+                    <a href="#">付款上課去</a>
+                </div>
+            </div>
+            <div class="classbox">
+                <a href="./image/gwd.jpg" data-lightbox="image3" data-title="">
+                    <img src="./image/gwd.jpg" alt="gwd">
+                </a>
+                <h3>Google Web Design</h3>
+                <p class="p-blue">由於，看看別人，再想想自己，會發現問題的核心其實就在你身旁。網頁設計，到底應該如何實現。面對如此難題，我們必須設想周全。</p>
+                <p>講師:XXX</p>
+                <P>影音課程時數:8小時</P>
+                <p class="p-center">
+                    <s>原價:NT$3200</s>
+                    <span>NT$1600</span>
+                </p>
+                <div class="pay">
+                    <a href="#">付款上課去</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>Copyright © xxx 版權所有. All rights reserved.</p>
+        </div>
+    </div>
+    <!-- 燈箱效果的js -->
+    <script src="lightbox2/js/lightbox-plus-jquery.js"></script>
+    <script src="lightbox2/js/lightbox.js"></script>
+</body>
+
+</html>
